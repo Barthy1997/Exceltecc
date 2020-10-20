@@ -1,0 +1,8 @@
+<p>List Produit</p>
+<div *ngFor='let p of products'>
+    <p>Name : {{p.nom}}</p>
+    <p>Prix : {{p.prix}}</p>
+    <p>Marque :{{p.marque}}</p>
+    <p> liste:{{p._id}}</p>
+    <button type="button" (click)='Panier(p._id)'>RFID</button>
+</div>

@@ -1,0 +1,13 @@
+<section id="call-to-action">
+    <div class="container">
+      <div class="row" data-aos="zoom-in">
+        <div class="col-lg-9 text-center text-lg-left">
+          <div *ngFor='let p of Actu'>
+          <h3 class="cta-title">{{p.titre}}</h3>
+          <p class="cta-text"></p>
+          <p>{{p.contenue}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Call To Action Section -->

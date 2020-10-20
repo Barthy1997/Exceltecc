@@ -1,0 +1,32 @@
+<body>
+    <div class="main">
+    <section class="signup">
+                 <img src="/src/assets/images/signup-bg.jpg" alt=""> 
+                <div class="container">
+                    <div class="signup-content">
+                        <form [formGroup]="FormActu" id="signup-form" class="signup-form">
+                            <h2 class="form-title">Ajout Actualité</h2>
+                            <div class="form-group">
+                            <input type="text" class="form-input" name="name"  placeholder="Nom" required formControlName='titre'/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" name="email"  placeholder="contenue" required formControlName='contenue'/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group">
+                             <button  type="button" (click)='saveActu()' class="btn btn-primary solid blank"> Sign In</button>
+                            </div>
+                        </form>
+                        <p class="loginhere">
+                             <a href="Admin" class="loginhere-link">Retour</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+    </body>

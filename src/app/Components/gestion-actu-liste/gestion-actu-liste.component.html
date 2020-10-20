@@ -1,0 +1,50 @@
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">E-COMMERCE Electronique</h1>
+     </div>
+</section>
+<div *ngFor='let p of user'>  
+<div class="container mb-4" >
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{p.nom}}</td>
+                            <td>{{p.email}}</td>
+                            <td class="text-right">{{p.description}}</td>
+                            
+                            <td><button type="button"  (click)='Panier(p._id)'class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col mb-2">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <button type="button" (click)='ajoutActu()' class="btn btn-lg btn-block btn-success text-uppercase">Ajouter</button>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right">
+                    <button class="btn btn-lg btn-block btn-success text-uppercase">Modifier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

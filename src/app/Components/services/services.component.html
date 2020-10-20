@@ -1,0 +1,22 @@
+<section id="services">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h3 class="section-title">Services</h3>
+        <p class="section-description"></p>
+
+      </div>
+      <div *ngFor='let p of Produit'>
+      <div class="row">
+        <div class="col-lg-12 col-md-8" data-aos="zoom-in">
+          <div class="box">
+            <div class="icon"><button type="button" (click)='Panier(p._id)'><i class="fa fa-desktop"></i></button></div>
+            <h4 class="title"><a routerLink="Excletracer">{{p.nom}}</a></h4>
+            <p class="description">{{p.description}}</p>
+            <button type="button" (click)='Panier(p._id)'>Commander</button>  
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+  
